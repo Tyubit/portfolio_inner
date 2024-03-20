@@ -1,6 +1,20 @@
-import React from 'react'
+import React,{useRef} from 'react'
+import { Link as ScrollLink } from "react-scroll";
+import * as Scroll from "react-scroll";
 
-const Navbar = () => {
+const Navbar = ({sectionRef}) => {
+  const scroller = Scroll.scroller;
+
+  const goToPageAndScroll = async (selector) => {
+    await navigate("/");
+    await scroller.scrollTo(selector, {
+      duration: 500,
+      smooth: true,
+      offset: -75,
+      spy: true
+    });
+  };
+
   return (
   <header className='flex items-center justify-between p-1 bg-yellow-400 text-black font-bold md:px-[20px]'>
       <div className='flex items-center justify-center text-glitch text-glitch-duration-slow'>
@@ -19,10 +33,20 @@ const Navbar = () => {
         <h3 className='ml-4'>Elisha Kovalev</h3>
       </div>
       <nav className='flex items-center justify-center gap-x-4 cursor-pointer text-glitch text-glitch-duration-slow' >
-        <a href='#'>About</a>
-        <a href='#'>Tech</a>
-        <a href='#'>Projects</a>
-        <button className="btn btn-active bg-black text-purple-400">Contact</button>
+        <ScrollLink to='about' spy={true} smooth={true} offset={0} duration={500}>
+          About
+        </ScrollLink>
+        <ScrollLink to='tech' spy={true} smooth={true} offset={-100} duration={500}>
+          Tech
+        </ScrollLink>
+        <ScrollLink to='projects' spy={true} smooth={true} offset={-100} duration={500}>
+          Projects
+        </ScrollLink>
+        <button className="btn btn-active bg-black text-purple-400">
+          <ScrollLink to='contact' spy={true} smooth={true} offset={-100} duration={500}>
+          Contact
+        </ScrollLink>
+        </button>
       </nav>
   </header>
   )
