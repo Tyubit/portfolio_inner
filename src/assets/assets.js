@@ -1,5 +1,9 @@
 import cardform from "../assets/cardForm.png";
 import calc from "../assets/calc.png";
+import todoapp from "../assets/todoapp.png";
+import portfolio from "../assets/port.jpg";
+import sup from "../assets/sup.jpg";
+import ip from "../assets/ip.jpg";
 
 //skill-level
 const tech = {
@@ -19,22 +23,40 @@ const tech = {
 const projects = [
     {
         "title": "Portfolio",
-        "tags": "React, HTML, CSS",
+        "tags": "React, Tailwind, Vite,R3F,Git ",
         "link": "/",
-        "preview": ""
+        "preview": portfolio
     },
     {
         "title": "Card Form",
-        "tags": "React, HTML, CSS",
+        "tags": "React, HTML, CSS,Git",
         "link": "https://interactive-card-io.vercel.app/",
         "preview": cardform
     },
     {
         "title": "Bill Splitte",
-        "tags": "React, HTML, CSS",
+        "tags": "React, HTML, CSS,Git",
         "link": "https://bill-splitter-two.vercel.app/",
         "preview": calc
     },
+    {
+        "title": "Bill Splitte",
+        "tags": "React, HTML, SCSS,Vite,Git",
+        "link": "https://todo-p6w6k72nt-tyubit.vercel.app/",
+        "preview": todoapp
+    },
+    {
+        "title": "ip finder",
+        "tags": "React, HTML, SCSS,Vite,Git",
+        "link": "https://ip-tracker-seven-rho.vercel.app/",
+        "preview": ip
+    },
+    {
+        "title": "Sup chat app",
+        "tags": "React,Node.js,Express.js,HTML, SCSS,Vite,Git",
+        "link": "https://sup-chat.onrender.com/",
+        "preview": sup
+    }
 ]
 
 const experiences = [
