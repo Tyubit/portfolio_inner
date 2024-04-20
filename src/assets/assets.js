@@ -1,6 +1,6 @@
-import cardform from "../assets/cardForm.png";
-import calc from "../assets/calc.png";
-import todoapp from "../assets/todoapp.png";
+import cardform from "../assets/cardForm.jpg";
+import calc from "../assets/calc.jpg";
+import todoapp from "../assets/todoapp.jpg";
 import portfolio from "../assets/port.jpg";
 import sup from "../assets/sup.jpg";
 import ip from "../assets/ip.jpg";
@@ -40,7 +40,7 @@ const projects = [
         "preview": calc
     },
     {
-        "title": "Bill Splitte",
+        "title": "Todo App",
         "tags": "React, HTML, SCSS,Vite,Git",
         "link": "https://todo-p6w6k72nt-tyubit.vercel.app/",
         "preview": todoapp
